@@ -1,0 +1,531 @@
+[
+  {
+    "release": "hammond",
+    "chartName": "hammond",
+    "namespace": "hammond",
+    "description": "Self-hosted vehicle expense tracking system with support for multiple users",
+    "home": "https://github.com/alfhou/hammond",
+    "icon": "https://github.com/alfhou/hammond/raw/master/ui/src/assets/images/logo.png",
+    "Installed": {
+      "version": "0.3.1",
+      "appVersion": "v0.0.2"
+    },
+    "Latest": {
+      "version": "0.3.1",
+      "appVersion": "v0.0.2"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "smtp",
+    "chartName": "smtp-relay",
+    "namespace": "smtp",
+    "description": "An SMTP smarthost relay for Kubernetes",
+    "home": "https://github.com/djjudas21/charts/tree/main/charts/smtp-relay",
+    "Installed": {
+      "version": "0.4.0",
+      "appVersion": "0.6.1"
+    },
+    "Latest": {
+      "version": "0.4.0",
+      "appVersion": "0.6.1"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "cert-manager-monitoring",
+    "chartName": "cert-manager-monitoring",
+    "namespace": "monitoring",
+    "description": "Monitor cert-manager with cert-manager-mixin.",
+    "home": "https://github.com/jetstack/cert-manager/issues/3342",
+    "Installed": {
+      "version": "0.1.2",
+      "appVersion": ""
+    },
+    "Latest": {
+      "version": "0.1.2",
+      "appVersion": ""
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "littlelink",
+    "chartName": "littlelink-server",
+    "namespace": "littlelink",
+    "description": "A lightweight open source alternative to linktree",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/littlelink-server",
+    "icon": "https://camo.githubusercontent.com/edebb9bce46a8d4a75fa8c4f50f20996c3fe55ace28ecfbfdc5da3794cc90e9a/68747470733a2f2f63646e2e636f74746c652e636c6f75642f6c6974746c656c696e6b2f736f6369616c2d636972636c652e706e67",
+    "Installed": {
+      "version": "1.5.3",
+      "appVersion": "1.0.0"
+    },
+    "Latest": {
+      "version": "1.5.3",
+      "appVersion": "1.0.0"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "truenas",
+    "chartName": "democratic-csi",
+    "namespace": "democratic-csi",
+    "description": "csi storage for container orchestration systems",
+    "Installed": {
+      "version": "0.13.5",
+      "appVersion": "1.0"
+    },
+    "Latest": {
+      "version": "0.13.7",
+      "appVersion": "1.0"
+    },
+    "outdated": true,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "dbdump",
+    "chartName": "dbdump",
+    "namespace": "dbdump",
+    "description": "A Helm chart to help backup SQL databases using mysqldump and pgdump",
+    "home": "https://github.com/djjudas21/dbdump",
+    "icon": "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
+    "Installed": {
+      "version": "0.0.10",
+      "appVersion": "0.0.8"
+    },
+    "Latest": {
+      "version": "0.0.10",
+      "appVersion": "0.0.8"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "prometheus-stack",
+    "chartName": "kube-prometheus-stack",
+    "namespace": "monitoring",
+    "description": "kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards, and Prometheus rules combined with documentation and scripts to provide easy to operate end-to-end Kubernetes cluster monitoring with Prometheus using the Prometheus Operator.",
+    "home": "https://github.com/prometheus-operator/kube-prometheus",
+    "icon": "https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png",
+    "Installed": {
+      "version": "45.8.0",
+      "appVersion": "v0.63.0"
+    },
+    "Latest": {
+      "version": "45.10.1",
+      "appVersion": "v0.63.0"
+    },
+    "outdated": true,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "webtrees",
+    "chartName": "webtrees",
+    "namespace": "webtrees",
+    "description": "Open-source online collaborative genealogy application",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/webtrees",
+    "icon": "https://raw.githubusercontent.com/fisharebest/webtrees/main/resources/img/webtrees-icon.png",
+    "Installed": {
+      "version": "2.2.6",
+      "appVersion": "2.1.12"
+    },
+    "Latest": {
+      "version": "2.2.6",
+      "appVersion": "2.1.12"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "bookstack",
+    "chartName": "bookstack",
+    "namespace": "bookstack",
+    "description": "A simple, self-hosted, easy-to-use platform for organising and storing information.",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/bookstack",
+    "icon": "https://avatars3.githubusercontent.com/u/20912696?s=400&v=4?sanitize=true",
+    "Installed": {
+      "version": "5.2.7",
+      "appVersion": "23.02.1"
+    },
+    "Latest": {
+      "version": "5.2.7",
+      "appVersion": "23.02.1"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "photoprism",
+    "chartName": "photoprism",
+    "namespace": "photoprism",
+    "description": "PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/photoprism",
+    "icon": "https://raw.githubusercontent.com/photoprism/photoprism/develop/assets/static/icons/app.svg",
+    "Installed": {
+      "version": "7.2.10",
+      "appVersion": "221118-jammy"
+    },
+    "Latest": {
+      "version": "7.2.10",
+      "appVersion": "221118-jammy"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "joplin-server",
+    "chartName": "joplin-server",
+    "namespace": "joplin",
+    "description": "This server allows you to sync any Joplin client",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/joplin-server",
+    "icon": "https://raw.githubusercontent.com/laurent22/joplin/master/Assets/LinuxIcons/256x256.png?raw=true",
+    "Installed": {
+      "version": "5.4.3",
+      "appVersion": "2.7.4-beta"
+    },
+    "Latest": {
+      "version": "5.4.3",
+      "appVersion": "2.7.4-beta"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "stmarysnavidrome",
+    "chartName": "navidrome",
+    "namespace": "stmarysnavidrome",
+    "description": "Navidrome is an open source web-based music collection server and streamer",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/navidrome",
+    "icon": "https://raw.githubusercontent.com/navidrome/navidrome/master/ui/src/icons/android-icon-192x192.png",
+    "Installed": {
+      "version": "6.6.3",
+      "appVersion": "0.49.3"
+    },
+    "Latest": {
+      "version": "6.6.3",
+      "appVersion": "0.49.3"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "owncloud",
+    "chartName": "owncloud",
+    "namespace": "owncloud",
+    "description": "A file sharing server that puts the control and security of your own data back into your hands.",
+    "home": "https://github.com/djjudas21/owncloud-helm",
+    "icon": "https://bitnami.com/assets/stacks/owncloud/img/owncloud-stack-220x234.png",
+    "Installed": {
+      "version": "0.3.3",
+      "appVersion": "10.12.0"
+    },
+    "Latest": {
+      "version": "0.3.3",
+      "appVersion": "10.12.0"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "paperless",
+    "chartName": "paperless",
+    "namespace": "paperless",
+    "description": "Paperless - Index and archive all of your scanned paper documents",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/paperless",
+    "icon": "https://avatars.githubusercontent.com/u/47271576?s=200&v=4",
+    "Installed": {
+      "version": "9.2.3",
+      "appVersion": "1.8.0"
+    },
+    "Latest": {
+      "version": "9.2.3",
+      "appVersion": "1.8.0"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "rook-ceph",
+    "chartName": "rook-ceph",
+    "namespace": "rook-ceph",
+    "description": "File, Block, and Object Storage Services for your Cloud-Native Environment",
+    "icon": "https://rook.io/images/rook-logo.svg",
+    "Installed": {
+      "version": "v1.11.2",
+      "appVersion": "v1.11.2"
+    },
+    "Latest": {
+      "version": "1.11.4",
+      "appVersion": "v1.11.4"
+    },
+    "outdated": true,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "navidrome",
+    "chartName": "navidrome",
+    "namespace": "owncloud",
+    "description": "Navidrome is an open source web-based music collection server and streamer",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/navidrome",
+    "icon": "https://raw.githubusercontent.com/navidrome/navidrome/master/ui/src/icons/android-icon-192x192.png",
+    "Installed": {
+      "version": "6.6.3",
+      "appVersion": "0.49.3"
+    },
+    "Latest": {
+      "version": "6.6.3",
+      "appVersion": "0.49.3"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "gemini",
+    "chartName": "gemini",
+    "namespace": "gemini",
+    "description": "Automated backup and restore of PersistentVolumes using the VolumeSnapshot API",
+    "Installed": {
+      "version": "2.0.0",
+      "appVersion": "2.0"
+    },
+    "Latest": {
+      "version": "2.0.0",
+      "appVersion": "2.0"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "rook-ceph-cluster",
+    "chartName": "rook-ceph-cluster",
+    "namespace": "rook-ceph",
+    "description": "Manages a single Ceph cluster namespace for Rook",
+    "icon": "https://rook.io/images/rook-logo.svg",
+    "Installed": {
+      "version": "v1.11.3",
+      "appVersion": "v1.11.3"
+    },
+    "Latest": {
+      "version": "1.11.4",
+      "appVersion": "v1.11.4"
+    },
+    "outdated": true,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "homer",
+    "chartName": "homer",
+    "namespace": "homer",
+    "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/homer",
+    "icon": "https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png",
+    "Installed": {
+      "version": "8.1.6",
+      "appVersion": "v23.02.1"
+    },
+    "Latest": {
+      "version": "8.1.6",
+      "appVersion": "v23.02.1"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "velero",
+    "chartName": "velero",
+    "namespace": "velero",
+    "description": "A Helm chart for velero",
+    "home": "https://github.com/vmware-tanzu/velero",
+    "icon": "https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png",
+    "Installed": {
+      "version": "3.1.6",
+      "appVersion": "1.10.2"
+    },
+    "Latest": {
+      "version": "3.1.6",
+      "appVersion": "1.10.2"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "camerahub-dev",
+    "chartName": "camerahub",
+    "namespace": "camerahub-dev",
+    "description": "App for cataloguing vintage cameras, lenses, films, negatives & prints",
+    "home": "https://camerahub.info/",
+    "icon": "https://raw.githubusercontent.com/camerahub/camerahub/master/schema/static/svg/camera.svg",
+    "Installed": {
+      "version": "0.10.9",
+      "appVersion": "0.36.11"
+    },
+    "Latest": {
+      "version": "0.10.9",
+      "appVersion": "0.36.11"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "camerahub",
+    "chartName": "camerahub",
+    "namespace": "camerahub-prod",
+    "description": "App for cataloguing vintage cameras, lenses, films, negatives & prints",
+    "home": "https://camerahub.info/",
+    "icon": "https://raw.githubusercontent.com/camerahub/camerahub/master/schema/static/svg/camera.svg",
+    "Installed": {
+      "version": "0.10.9",
+      "appVersion": "0.36.11"
+    },
+    "Latest": {
+      "version": "0.10.9",
+      "appVersion": "0.36.11"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "about",
+    "chartName": "homer",
+    "namespace": "about",
+    "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/homer",
+    "icon": "https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png",
+    "Installed": {
+      "version": "8.1.6",
+      "appVersion": "v23.02.1"
+    },
+    "Latest": {
+      "version": "8.1.6",
+      "appVersion": "v23.02.1"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "oauth2-proxy",
+    "chartName": "oauth2-proxy",
+    "namespace": "oauth2-proxy",
+    "description": "A reverse proxy that provides authentication with Google, Github or other providers",
+    "home": "https://oauth2-proxy.github.io/oauth2-proxy/",
+    "Installed": {
+      "version": "6.10.1",
+      "appVersion": "7.4.0"
+    },
+    "Latest": {
+      "version": "6.10.1",
+      "appVersion": "7.4.0"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "graphite-exporter",
+    "chartName": "graphite-exporter",
+    "namespace": "monitoring",
+    "description": "A Prometheus exporter for metrics exported in the Graphite plaintext protocol",
+    "home": "https://github.com/djjudas21/charts/tree/master/charts/graphite-exporter",
+    "icon": "https://graphiteapp.org/img/apple-touch-icon-144x144.png",
+    "Installed": {
+      "version": "0.1.6",
+      "appVersion": "v0.12.3"
+    },
+    "Latest": {
+      "version": "0.1.6",
+      "appVersion": "v0.12.3"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "node-problem-detector",
+    "chartName": "node-problem-detector",
+    "namespace": "kube-system",
+    "description": "This chart installs a [node-problem-detector](https://github.com/kubernetes/node-problem-detector) daemonset. This tool aims to make various node problems visible to the upstream layers in cluster management stack. It is a daemon which runs on each node, detects node problems and reports them to apiserver. ",
+    "home": "https://github.com/kubernetes/node-problem-detector",
+    "icon": "https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png",
+    "Installed": {
+      "version": "2.3.4",
+      "appVersion": "v0.8.12"
+    },
+    "Latest": {
+      "version": "2.3.4",
+      "appVersion": "v0.8.12"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  },
+  {
+    "release": "prometheus-smartctl-exporter",
+    "chartName": "prometheus-smartctl-exporter",
+    "namespace": "monitoring",
+    "description": "A Helm chart for Kubernetes",
+    "Installed": {
+      "version": "0.4.0",
+      "appVersion": "v0.9.1"
+    },
+    "Latest": {
+      "version": "0.4.0",
+      "appVersion": "v0.9.1"
+    },
+    "outdated": false,
+    "deprecated": false,
+    "helmVersion": "3",
+    "overridden": false
+  }
+]
