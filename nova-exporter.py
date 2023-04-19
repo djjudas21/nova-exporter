@@ -23,6 +23,7 @@
 from prometheus_client import start_http_server, Gauge, REGISTRY, GC_COLLECTOR, PLATFORM_COLLECTOR, PROCESS_COLLECTOR
 import time
 import json
+import subprocess
 
 REGISTRY.unregister(GC_COLLECTOR)
 REGISTRY.unregister(PLATFORM_COLLECTOR)
@@ -35,9 +36,10 @@ def collect_metrics():
     while True:
         # run nova
         nova_output = run_nova()
+        nova_output_json = json.loads(nova_output)
 
         # parse results
-        for obj in nova_output:
+        for obj in nova_output_json:
             uptodate = 1 if obj['outdated'] is False else 0
 
             RELEASES_INFO.labels(
@@ -48,15 +50,14 @@ def collect_metrics():
                 obj['Latest']['version']
 			).set(int(uptodate))
 
-        time.sleep(60)
+        time.sleep(3600)
 
 def run_nova():
-    # This function should execute Nova to get output.
-    # For now, we just test with saved output in a text file
-    with open('nova-output.json', 'r') as file:
-        python_obj = json.load(file)
-    return python_obj
-
+    try:
+        result = subprocess.run(['nova', 'find'], capture_output=True, text=True).stdout
+    except:
+        print('Failed to run Nova')
+    return result.strip()
 
 if __name__ == '__main__': 
     start_http_server(8000)
