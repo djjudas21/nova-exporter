@@ -1,8 +1,3 @@
-import json
-
-with open('nova-output.json', 'r') as file:
-    python_obj = json.load(file)
-
 # Example record from Nova
 #  {
 #    "release": "hammond",
@@ -25,6 +20,44 @@ with open('nova-output.json', 'r') as file:
 #    "overridden": false
 #  },
 
-for obj in python_obj:
-	uptodate = 1 if obj['outdated'] is False else 0
-	print(f"""nova_release{{release="{obj['release']}",chartName="{obj['chartName']}",namespace="{obj['namespace']}",installed="{obj['Installed']['version']}",latest="{obj['Latest']['version']}"}} {uptodate}""")
+from prometheus_client import start_http_server, Gauge, REGISTRY, GC_COLLECTOR, PLATFORM_COLLECTOR, PROCESS_COLLECTOR
+import time
+import json
+
+REGISTRY.unregister(GC_COLLECTOR)
+REGISTRY.unregister(PLATFORM_COLLECTOR)
+REGISTRY.unregister(PROCESS_COLLECTOR)
+
+RELEASES_INFO = Gauge('nova_release', 'Nova releases', [
+                        'release', 'chartName', 'namespace', 'installed', 'latest'])
+
+def collect_metrics():
+    while True:
+        # run nova
+        nova_output = run_nova()
+
+        # parse results
+        for obj in nova_output:
+            uptodate = 1 if obj['outdated'] is False else 0
+
+            RELEASES_INFO.labels(
+                obj['release'],
+				obj['chartName'],
+                obj['namespace'],
+                obj['Installed']['version'],
+                obj['Latest']['version']
+			).set(int(uptodate))
+
+        time.sleep(60)
+
+def run_nova():
+    # This function should execute Nova to get output.
+    # For now, we just test with saved output in a text file
+    with open('nova-output.json', 'r') as file:
+        python_obj = json.load(file)
+    return python_obj
+
+
+if __name__ == '__main__': 
+    start_http_server(8000)
+    collect_metrics()
