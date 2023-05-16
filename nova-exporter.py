@@ -25,10 +25,10 @@ Prometheus exporter for Fairwinds Nova
 #    "overridden": false
 #  },
 
-from prometheus_client import start_http_server, Gauge, REGISTRY, GC_COLLECTOR, PLATFORM_COLLECTOR, PROCESS_COLLECTOR
 import time
 from json import loads, JSONDecodeError
 import subprocess
+from prometheus_client import start_http_server, Gauge, REGISTRY, GC_COLLECTOR, PLATFORM_COLLECTOR, PROCESS_COLLECTOR
 
 REGISTRY.unregister(GC_COLLECTOR)
 REGISTRY.unregister(PLATFORM_COLLECTOR)
@@ -72,11 +72,11 @@ def run_nova():
     """
 
     try:
-        result = subprocess.run(['nova', 'find'], capture_output=True, text=True).stdout
+        result = subprocess.run(['nova', 'find'], capture_output=True, text=True, check=False).stdout
     except:
         print('Failed to run Nova')
     return result.strip()
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     start_http_server(8000)
     collect_metrics()
