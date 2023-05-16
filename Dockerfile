@@ -9,9 +9,9 @@ RUN curl -L "https://github.com/FairwindsOps/nova/releases/download/3.2.0/nova_3
 # Install Nova Exporter
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
-COPY nova-exporter.py /
+COPY nova_exporter.py /
 WORKDIR /
 
 # Run it!
-CMD ["python", "nova-exporter.py"]
+CMD ["python", "nova_exporter.py"]
 EXPOSE 8000/tcp
