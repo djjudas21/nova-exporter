@@ -1,3 +1,8 @@
+"""
+NOVA EXPORTER
+Prometheus exporter for Fairwinds Nova
+"""
+
 # Example record from Nova
 #  {
 #    "release": "hammond",
@@ -33,6 +38,10 @@ RELEASES_INFO = Gauge('nova_release', 'Nova releases', [
                         'release', 'chartName', 'namespace', 'installed', 'latest'])
 
 def collect_metrics():
+    """
+    Periodically collect the json output from Nova and mangle it
+    into a Prometheus metrics format, ready to be served via http
+    """
     while True:
         # run nova
         nova_output = run_nova()
@@ -54,9 +63,14 @@ def collect_metrics():
                 obj['Latest']['version']
 			).set(int(uptodate))
 
+        # Sleep for 1 hour between checking Nova again
         time.sleep(3600)
 
 def run_nova():
+    """
+    Execute the Nova binary and capture the json output
+    """
+
     try:
         result = subprocess.run(['nova', 'find'], capture_output=True, text=True).stdout
     except:
