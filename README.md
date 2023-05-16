@@ -9,6 +9,8 @@ ArtifactHub API as well as your Kubernetes cluster).
 It accesses whichever Kubernetes cluster is currently set in your context. If you run the script locally, it will operate on whatever cluster
 is referenced in the output of `kubectl cluster-info`. When run in Kubernetes, it should automatically operate on the cluster it is running in.
 
+It listens on port 8000. There are currently no configurable options for this exporter.
+
 ## Example output from Nova
 
 When Nova is run in json output mode, each record looks like this. There is one record per Helm deployment.
