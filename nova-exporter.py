@@ -22,7 +22,7 @@
 
 from prometheus_client import start_http_server, Gauge, REGISTRY, GC_COLLECTOR, PLATFORM_COLLECTOR, PROCESS_COLLECTOR
 import time
-import json
+from json import loads, JSONDecodeError
 import subprocess
 
 REGISTRY.unregister(GC_COLLECTOR)
@@ -36,7 +36,11 @@ def collect_metrics():
     while True:
         # run nova
         nova_output = run_nova()
-        nova_output_json = json.loads(nova_output)
+
+        try:
+            nova_output_json = loads(nova_output)
+        except JSONDecodeError:
+            nova_output_json = []
 
         # parse results
         for obj in nova_output_json:
