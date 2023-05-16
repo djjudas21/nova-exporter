@@ -3,28 +3,6 @@ NOVA EXPORTER
 Prometheus exporter for Fairwinds Nova
 """
 
-# Example record from Nova
-#  {
-#    "release": "hammond",
-#    "chartName": "hammond",
-#    "namespace": "hammond",
-#    "description": "Self-hosted vehicle expense tracking system with support for multiple users",
-#    "home": "https://github.com/alfhou/hammond",
-#    "icon": "https://github.com/alfhou/hammond/raw/master/ui/src/assets/images/logo.png",
-#    "Installed": {
-#      "version": "0.3.1",
-#      "appVersion": "v0.0.2"
-#    },
-#    "Latest": {
-#      "version": "0.3.1",
-#      "appVersion": "v0.0.2"
-#    },
-#    "outdated": false,
-#    "deprecated": false,
-#    "helmVersion": "3",
-#    "overridden": false
-#  },
-
 import time
 from json import loads, JSONDecodeError
 import subprocess
