@@ -11,6 +11,17 @@ is referenced in the output of `kubectl cluster-info`. When run in Kubernetes, i
 
 It listens on port 8000. There are currently no configurable options for this exporter.
 
+## Installing
+
+There is a [Helm chart](https://github.com/djjudas21/charts/tree/main/charts/nova-exporter) available, which installs nova-exporter
+and optionally enables a ServiceMonitor and a PrometheusRule for the Prometheus Operator.
+
+```
+helm repo add djjudas21 https://djjudas21.github.io/charts/
+helm repo update djjudas21
+helm install -n monitoring nova-exporter djjudas21/nova-exporter --set 'serviceMonitor.enabled=true' --set 'prometheusRules.enabled=true'
+```
+
 ## Example output from Nova
 
 When Nova is run in json output mode, each record looks like this. There is one record per Helm deployment.
