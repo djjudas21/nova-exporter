@@ -29,6 +29,9 @@ def collect_metrics():
         except JSONDecodeError:
             nova_output_json = []
 
+        # clear existing metrics
+        RELEASES_INFO.clear()
+
         # parse results
         for obj in nova_output_json:
             uptodate = 1 if obj['outdated'] is False else 0
