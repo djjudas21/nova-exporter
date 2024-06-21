@@ -35,6 +35,7 @@ def collect_metrics():
         # parse results
         for obj in nova_output_json:
             uptodate = 1 if obj['outdated'] is False else 0
+            status = "up to date" if obj['outdated'] is False else "outdated"
 
             RELEASES_INFO.labels(
                 obj['release'],
@@ -43,8 +44,10 @@ def collect_metrics():
                 obj['Installed']['version'],
                 obj['Latest']['version']
 			).set(int(uptodate))
+            print(f"Chart {obj['chartName']} {obj['Installed']['version']} is {status}")
 
         # Sleep for 1 hour between checking Nova again
+        print("Sleeping...")
         time.sleep(3600)
 
 def run_nova():
@@ -53,7 +56,9 @@ def run_nova():
     """
 
     try:
+        print('Running Nova...')
         result = subprocess.run(['nova', 'find'], capture_output=True, text=True, check=False).stdout
+        print('Completed Nova run')
     except:
         print('Failed to run Nova')
     return result.strip()
