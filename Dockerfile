@@ -2,7 +2,7 @@ FROM python:3.12-alpine
 
 # Install Nova
 RUN apk --no-cache add curl
-RUN curl -L "https://github.com/FairwindsOps/nova/releases/download/v3.10.0/nova_3.10.0_linux_amd64.tar.gz" > nova.tar.gz && \
+RUN curl -L "https://github.com/FairwindsOps/nova/releases/download/v3.10.1/nova_3.10.1_linux_amd64.tar.gz" > nova.tar.gz && \
   tar -xvf nova.tar.gz && \
   mv nova /usr/local/bin/
 
